@@ -14,8 +14,9 @@
     height: 50px;
 
 }
-.display{
-    display:flex;
+
+.display {
+    display: flex;
 }
 
 
@@ -32,7 +33,7 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-.text-light-gray {
+.text-light-gray{
     color: rgb(107, 114, 128);
 }
 
@@ -128,33 +129,97 @@
 
 /* flower */
 
-.flower-head{
-    font-size:3rem;
-    font-weight:700;
+.flower-head {
+    font-size: 3rem;
+    font-weight: 700;
 }
-.flower-text{
+
+.flower-text {
     font-size: 1.5rem;
     font-weight: 400;
-    
+
 }
-.flower{
+
+.flower {
     margin-top: 130px;
     margin-bottom: 130px;
-    gap:60px;
+    gap: 60px;
 }
 
+/* join section */
+.join {
+    background-image: url("../assets/news-letter-bg.png");
+    background-size: cover;
+    position: center;
+    
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
 
+.join-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
+}
+
+.join-section input {
+    width: 640px;
+    height: 50px;
+    padding: 8px 20px;
+    font-size: 1rem;
+}
+
+.join-text {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+/* footer */
+.footer-section{
+    display:flex;
+    justify-content: space-around;
+    margin-top:50px;
+    margin-bottom: 50px;
+
+}
+.foot-opt{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+}
+
+.foot-opt ul{
+list-style: none;
+gap:10px;
+}
+.foot-opt  li a{
+   color: rgb(107, 114, 128);
+    text-decoration: none;
+}
 /* responsive */
 @media screen and (max-width:576px) {
 
     .nav-bar,
-    .header, .flower {
+    .header {
         flex-direction: column;
+        margin: 0 auto;
+
+    }
+
+    .flower {
+        flex-direction: column;
+
     }
 
     .buy-card {
         grid-template-columns: repeat(2, 1fr);
+
     }
+
 
 }
