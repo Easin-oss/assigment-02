@@ -14,10 +14,9 @@
     height: 50px;
 
 }
-
-
-
-
+.display{
+    display:flex;
+}
 
 
 /* text color */
@@ -120,21 +119,42 @@
     padding: 25px 50px;
 
 }
-.buy-card{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:20px
+
+.buy-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px
 }
+
+/* flower */
+
+.flower-head{
+    font-size:3rem;
+    font-weight:700;
+}
+.flower-text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+}
+.flower{
+    margin-top: 130px;
+    margin-bottom: 130px;
+    gap:60px;
+}
+
+
 
 /* responsive */
 @media screen and (max-width:576px) {
 
     .nav-bar,
-    .header {
+    .header, .flower {
         flex-direction: column;
     }
-    .buy-card{
-        grid-template-columns: repeat(2,1fr);
+
+    .buy-card {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
