@@ -8,6 +8,18 @@
     margin: 0 auto;
 }
 
+.btn-primary {
+    background-color: rgb(233, 90, 8);
+    width: 270px;
+    height: 50px;
+
+}
+
+
+
+
+
+
 /* text color */
 .text-orange {
     color: rgb(233, 90, 8);
@@ -62,7 +74,57 @@
     font-size: 1.5rem;
 }
 
+/* our plants section */
+.our-plant {
+    font-weight: 700px;
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+}
 
+.our-description {
+    font-size: 1.5rem;
+    font-weight: 400px;
+    text-align: center;
+}
+
+.buy-feature {
+    border: 1px solid #FF900E;
+    width: 270px;
+    height: 480px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.f-name {
+    color: rgb(17, 17, 17);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: 700px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-text {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 25px 50px;
+
+}
+.buy-card{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px
+}
 
 /* responsive */
 @media screen and (max-width:576px) {
@@ -70,6 +132,9 @@
     .nav-bar,
     .header {
         flex-direction: column;
+    }
+    .buy-card{
+        grid-template-columns: repeat(2,1fr);
     }
 
 }
