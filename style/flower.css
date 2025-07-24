@@ -1,7 +1,4 @@
 /* shared style */
-
-
-
 .shared-width {
     max-width: 1140px;
     margin: 0 auto;
@@ -41,9 +38,7 @@
     color: black;
 }
 
-.white {
-    color: white;
-}
+
 
 /* banner */
 .nav-bar {
@@ -150,7 +145,7 @@
     font-weight: 700;
 }
 
-.deals-description{
+.deals-description {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 30px;
@@ -187,6 +182,12 @@
     text-align: center;
     padding-top: 55px;
 
+}
+
+.white {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 /* flower */
@@ -267,17 +268,17 @@
     margin-bottom: 50px;
 }
 
-.foot-opt ul{
+.foot-opt ul {
     font-size: 1.5rem;
     font-weight: 400;
     list-style: none;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .foot-opt li a {
     color: rgb(107, 114, 128);
     text-decoration: none;
-    
+
 }
 
 
