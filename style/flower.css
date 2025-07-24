@@ -139,6 +139,17 @@
     gap: 20px;
 
 }
+.deals-text{
+    text-align: center;
+}
+.latest{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.deals-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
 
 .image-1 {
     background-image: url("../assets/deal-bloom.png");
@@ -285,7 +296,7 @@
         height: 185px;
     }
 
-    .flower, .deals {
+    .flower, .deals, .footer-section {
         flex-direction: column;
 
     }
