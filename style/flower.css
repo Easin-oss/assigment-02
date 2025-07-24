@@ -1,7 +1,6 @@
 /* shared style */
-* {
-    background-color: rgb(245, 248, 255);
-}
+
+
 
 .shared-width {
     max-width: 1140px;
@@ -11,8 +10,8 @@
 
 .btn-primary {
     background-color: rgb(233, 90, 8);
-    width: 270px;
-    height: 50px;
+    padding: 19px 80px;
+    border: none;
 
 }
 
@@ -38,6 +37,14 @@
     color: rgb(107, 114, 128);
 }
 
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
 /* banner */
 .nav-bar {
     display: flex;
@@ -52,9 +59,14 @@
 }
 
 .nav-bar li a {
-    color: black;
+
     text-decoration: none;
 
+}
+
+.icon {
+    display: flex;
+    gap: 3px;
 }
 
 /* header */
@@ -90,11 +102,6 @@
 }
 
 .buy-feature {
-    border: 1px solid #FF900E;
-    width: 270px;
-    height: 480px;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
@@ -115,10 +122,8 @@
 .btn-text {
     color: rgb(255, 255, 255);
     font-weight: 600;
-    justify-content: center;
-    align-items: center;
     font-size: 1rem;
-    padding: 25px 50px;
+    padding: 19px 80px;
 
 }
 
@@ -126,6 +131,46 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px
+}
+
+/*deals section*/
+.deals {
+    display: flex;
+    gap: 20px;
+
+}
+
+.image-1 {
+    background-image: url("../assets/deal-bloom.png");
+    background-repeat: no-repeat;
+    width: 367px;
+    height: 206px;
+    border-radius: 15px;
+}
+
+.image-2 {
+    background-image: url("../assets/deal-ana.png");
+    background-repeat: no-repeat;
+    width: 367px;
+    height: 206px;
+    border-radius: 15px;
+    margin-top: 9px;
+}
+
+.image-3 {
+    background-image: url("../assets/deal-zabo.png");
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 753px;
+    height:412px;
+
+    
+}
+
+.titel {
+    text-align: center;
+    padding-top: 55px;
+
 }
 
 /* flower */
@@ -149,9 +194,8 @@
 /* join section */
 .button {
     background-color: rgb(233, 90, 8);
-    width: 186px;
-    height: 50px;
-    padding: 26px 50px 26px 50px;
+    padding: 19px 53px;
+    border: none;
 
 }
 
@@ -159,7 +203,7 @@
     color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 600;
-    
+
 }
 
 .join {
@@ -167,31 +211,28 @@
     background-size: cover;
     position: center;
     height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: none;
 
 }
 
 .join-section {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-
+    margin-top: 23px;
 }
 
 .join-section input {
-    width: 830px;
-    height: 50px;
-    padding: 8px 20px;
+    width: 40.25rem;
+    padding-top: 19px;
+    padding-bottom: 19px;
     font-size: 1rem;
+
+
 }
 
 .join-text {
-    /* color: rgb(255, 255, 255); */
+    color: white;
+    padding-top: 12.5rem;
     font-size: 50px;
     font-weight: 700;
     text-align: center;
@@ -227,15 +268,24 @@
 /* responsive */
 @media screen and (max-width:576px) {
 
-    .nav-bar {}
+    .responsive{
+        display: none;
+    }
 
     .header {
         flex-direction: column;
-        margin: 0 auto;
-
+        flex-direction: column-reverse;
+        
+    }
+    .shared-width{
+        margin-top: 0;
+    }
+    .image-1, .image-2, .image-3{
+        width:361px;
+        height: 185px;
     }
 
-    .flower {
+    .flower, .deals {
         flex-direction: column;
 
     }
@@ -244,6 +294,10 @@
         grid-template-columns: repeat(2, 1fr);
 
     }
+    .join-section input{
+        width:321px
+    }
+
 
 
 }

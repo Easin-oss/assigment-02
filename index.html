@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Assigment-02</title>
     <link rel="stylesheet" href="./style/flower.css">
+    <script src="https://kit.fontawesome.com/df043277c6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,11 +14,17 @@
         <nav class="nav-bar">
             <div> <img src="./assets/logo.png" alt=""></div>
             <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="shop">Shop</a></li>
-                <li><a href="about us">About Us</a></li>
+                <div class="responsive">
+                    <li><a href="home" class="black">Home</a></li>
+                    <li><a href="shop" class="text-stone">Shop</a></li>
+                    <li><a href="about us" class="text-stone">About Us</a></li>
+                </div>
 
-                <li><a href="cart">Cart($56)</a></li>
+                <div class="icon">
+                    <li class="fa-solid fa-cart-shopping"></li>
+                    <li><a href="cart" class="black">Cart($56)</a></li>
+                </div>
+
 
             </ul>
         </nav>
@@ -121,23 +128,62 @@
 
 
         </section>
+        <!-- deals-->
+        <section>
+            <div>
+                <h1> <span>Latest</span> Deals</h1>
+                <P>Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br>
+                    classic roses to exotic blooms, we offer a wide variety of fresh.</P>
+            </div>
+            <div class="deals shared-width">
+
+                <div>
+                    <div class="image-1">
+                        <div class="titel">
+                            <h3 class="white"> 60% Off | Bloom Plant</h3>
+                            <h3 class="white">Shop now</h3>
+                        </div>
+
+
+                    </div>
+                    <div class="image-2">
+                        <div class="titel">
+                            <h3 class="white"> 30% Off | Ana Plant</h3>
+                            <h3 class="white">Shop now</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="image-3">
+                    <div class="titel">
+                        <h3 class="white"> 25% Off | Zabo Plant</h3>
+                        <h3 class="white">Shop now</h3>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
 
         <!--join section-->
         <section>
             <div class="join">
+                <h2 class="join-text">Join the colorful Bunch</h2>
                 <div class="join-section">
-                    <h2 class="join-text">Join the colorful Bunch</h2>
+
                     <input type="email" id="" name="email" placeholder="write your email">
-                    <div>
-                        <button class="button button-text">Subscribe</button>
-                    </div>
-                    
+
+                    <button class="button button-text">Subscribe</button>
+
+
 
                 </div>
 
             </div>
         </section>
-        
+
     </main>
     <footer class="footer-section shared-width ">
         <div>
