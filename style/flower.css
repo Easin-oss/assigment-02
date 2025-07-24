@@ -6,6 +6,7 @@
 .shared-width {
     max-width: 1140px;
     margin: 0 auto;
+    margin-top: 130px;
 }
 
 .btn-primary {
@@ -33,7 +34,7 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-.text-light-gray{
+.text-light-gray {
     color: rgb(107, 114, 128);
 }
 
@@ -141,20 +142,37 @@
 }
 
 .flower {
-    margin-top: 130px;
     margin-bottom: 130px;
     gap: 60px;
 }
 
 /* join section */
+.button {
+    background-color: rgb(233, 90, 8);
+    width: 186px;
+    height: 50px;
+    padding: 26px 50px 26px 50px;
+
+}
+
+.button-text {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
 .join {
     background-image: url("../assets/news-letter-bg.png");
     background-size: cover;
     position: center;
-    
     height: 600px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: none;
+
 }
 
 .join-section {
@@ -166,45 +184,51 @@
 }
 
 .join-section input {
-    width: 640px;
+    width: 830px;
     height: 50px;
     padding: 8px 20px;
     font-size: 1rem;
 }
 
 .join-text {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     font-size: 50px;
     font-weight: 700;
     text-align: center;
 }
+
 /* footer */
-.footer-section{
-    display:flex;
+.footer-section {
+    display: flex;
     justify-content: space-around;
-    margin-top:50px;
+    margin-top: 50px;
     margin-bottom: 50px;
 
 }
-.foot-opt{
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
+
+.foot-opt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 
 }
 
-.foot-opt ul{
-list-style: none;
-gap:10px;
+.foot-opt ul {
+    list-style: none;
+    gap: 10px;
 }
-.foot-opt  li a{
-   color: rgb(107, 114, 128);
+
+.foot-opt li a {
+    color: rgb(107, 114, 128);
     text-decoration: none;
 }
+
+
 /* responsive */
 @media screen and (max-width:576px) {
 
-    .nav-bar,
+    .nav-bar {}
+
     .header {
         flex-direction: column;
         margin: 0 auto;
